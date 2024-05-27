@@ -14,3 +14,67 @@
   a, strong, span, h1{
     color: #222;
   }
+
+  .container{
+    width: 100%;
+    max-width: 1266px;
+    margin: 80px auto 0;
+  }
+
+  h1{
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .informacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info-left{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .info-left div{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+  }
+  .info-left div:not(:first-child)::before{
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: #222;
+    border-radius: 100%;
+
+  }
+  .info-left div:has(strong, a){
+    font-weight: 500;
+  }
+
+  .info-right{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  .info-right button{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    font-size: 16px;
+
+    border: 0;
+    background: transparent;
+  }
+
+  .info-right button span{
+    text-decoration: underline;
+  }
