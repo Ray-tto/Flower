@@ -1,66 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Layout do Airbnb</title>
-
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/3402e0043a.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Casa do Didigo - Paraíso com Praia Particular</h1>
-      <div class="informacao">
-        <div class="info-left">
-          <div>
-            <i class="fa-sharp fa-solid fa-star"></i>
-            <strong>4.95</strong>
-          </div>
-          <div>
-            <a href="#">300 comentarios</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-medal"></i>
-            <span>SuperHost</span>
-          </div>
-          <div>
-            <a href="#">Angra dos Reis, Rio de Janeiro</a>
-          </div>
-        </div>
-
-
-        <div class="info-right">
-          <button><i class="fa-solid fa-arrow-up-from-bracket fa-sm"></i>
-          <span>Compartilhar</span></button>
-          <button><i class="fa-sharp fa-regular fa-heart fa-sm"></i>
-          <span>Salvar</span></button>
-        </div>
+  <main>
+    <div class="resume">
+      <div>
+        Entradas: R$ <span class="incomes">0.00</span>
       </div>
-    </header>
-    <section class="images">
-      <picture>
-        <img src="img/foto1.webp" alt="">
-      </picture>
-      <picture>
-        <img src="img/foto2.webp" alt="">
-      </picture>
-      <picture>
-        <img src="img/foto3.webp" alt="">
-      </picture>
-      <picture>
-        <img src="img/foto4.webp" alt="">
-      </picture>
-      <picture>
-        <img src="img/foto5.webp" alt="">
-      </picture>
-    </section>
-  </div>
+      <div>
+        Saídas: R$ <span class="expenses">0.00</span>
+      </div>
+      <div>
+        Total: R$ <span class="total">0.00</span>
+      </div>
+    </div>
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc">Descrição</label>
+        <input type="text" id="desc">
+      </div>
+      <div class="divAmount">
+        <label for="amount">Valor</label>
+        <input type="number" id="amount">
+      </div>
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <button id="btnNew">Incluir</button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th class="columnAmount">Valor</th>
+            <th class="columnType">Tipo</th>
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <i class="material-symbols-outlined" id="up"> keyboard_double_arrow_up </i>
+          <i class="material-symbols-outlined" id="down"> keyboard_double_arrow_down </i>
+        
+        </tbody>
+      </table>
+    </div>
 
 
-    
+
+  </main>
+
+
+  
+
 </body>
 </html>
