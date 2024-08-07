@@ -25,6 +25,7 @@ main{
 }
 
 .resume{
+  margin-top: 1rem;
   display: flex;
   padding: 1rem;
   gap: 40px;
@@ -89,4 +90,32 @@ th{
 
 i{
   font-size: 25px;
+}
+
+
+#up{
+  color: #00C9A7;
+}
+
+#down{
+  color: #D83121;
+}
+
+.columnAction{
+  width: 40px;
+  text-align: center;
+}
+
+.columnAction > button {
+  background-color: transparent;
+  border: none;
+}
+
+.columnAmount{
+  width: 30%;
+}
+
+.columnType{
+  width: 80px;
+  text-align: center;
 }
