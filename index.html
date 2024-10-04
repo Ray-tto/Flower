@@ -1,65 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-  <main>
-    <div class="resume">
-      <div>
-        Entradas: R$ <span class="incomes">0.00</span>
-      </div>
-      <div>
-        Saídas: R$ <span class="expenses">0.00</span>
-      </div>
-      <div>
-        Total: R$ <span class="total">0.00</span>
-      </div>
-    </div>
-    <div class="newItem">
-      <div class="divDesc">
-        <label for="desc">Descrição</label>
-        <input type="text" id="desc">
-      </div>
-      <div class="divAmount">
-        <label for="amount">Valor</label>
-        <input type="number" id="amount">
-      </div>
-      <div class="divType">
-        <label for="type">Tipo</label>
-        <select id="type">
-          <option>Entrada</option>
-          <option>Saída</option>
-        </select>
-      </div>
-      <button id="btnNew">Incluir</button>
-    </div>
+    <header>
 
-    <div class="divTable">
-      <table>
-        <thead>
-          <tr>
-            <th>Descrição</th>
-            <th class="columnAmount">Valor</th>
-            <th class="columnType">Tipo</th>
-            <th class="columnAction"></th>
-          </tr>
-        </thead>
-        <tbody>
-          
-        </tbody>
-      </table>
-    </div>
-  </main>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="menu"><span class="material-symbols-outlined">menu</span></label>
+
+        <a href="#" class="logo">Flower<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="material-symbols-outlined">favorite</a>
+            <a href="#" class="material-symbols-outlined">shopping_cart</a>
+            <a href="#" class="material-symbols-outlined">person</a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Fresh Flowers</h3>
+            <span> Natural & beautiful flowers</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Soluta numquam ducimus distinctio? Facere totam, architecto dolor iure,
+            optio dolorum excepturi ea veniam quia eum voluptatum ad fugit eaque, a asperiores?</p>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"><span>About</span> us</h1>
+        <div class="row">
+            <div class="video-container">
+                <img src="image/bee.gif" alt="gif">
+            </div>
+
+            <div class="content">
+                <h3>Why choose us?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Veritatis ad maxime assumenda tempore optio. Laboriosam reiciendis 
+                facilis sapiente error, possimus dolore omnis voluptates voluptate, 
+                sed blanditiis aspernatur ipsum dolores.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.
+                Maiores cum assumenda obcaecati eligendi nisi, iure distinctio 
+                blanditiis quibusdam deserunt? Eius ipsum, incidunt ratione eligendi 
+                reprehenderit laboriosam optio eaque dolorum totam.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
 
 
-  
+    <section class="icons-container">
+        <div class="icons">
+            <img src="image/delivery-car.png" alt="">
+            <div class="info">
+                <h3>Free delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="image/money.png" alt="">
+            <div class="info">
+                <h3>10 days returns</h3>
+                <span>moneyback guarantee</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="image/gift-card.png" alt="">
+            <div class="info">
+                <h3>offer & gifts</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img class="cartao" src="image/credit-card.png" alt="">
+            <div class="info">
+                <h3>Secure paymens</h3>
+                <span>protacted by paypal</span>
+            </div>
+        </div>
+
+
+    </section>
 
 </body>
 </html>
-
